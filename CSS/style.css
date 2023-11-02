@@ -577,10 +577,79 @@
             margin-top: 40px;
             text-align: justify;
 
-
         }
+        .foto-login {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            height:723px;
+            width: 1440px;
+            padding: 0 5%;
+            flex-wrap: wrap; 
+            margin: 0 auto;
+            padding-top: 100px;
+        }    
 
 
+        .login-form {
+            width: 300px;
+            margin: 0 auto;
+            border-radius:30px;
+            padding: 20px;
+            background-color:#ffffff;
+            width: 440px;
+            height: 374px;
+            padding-top: 50px;
+
+          }
+          .login-form input[type="text"], .login-form input[type="password"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: none;
+            background: #0C6B2E1A;
+            border-radius: 5px;
+            
+
+          }
+          .login-form input[type="submit"] {
+            background-color: #0C6B2E;
+            color: white;
+            padding: 27px 47px;
+            margin: 8px 125px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            font-size: 16px;
+            text-align: center;
+            font-family: poppins;
+
+        
+        
+        
+
+            
+          }
+          .login-form h2{
+            font-family: Poppins;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 40px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: #0C6B2E;
+            
+
+
+          }
+          ::placeholder {
+            color: #849170;
+
+          }
+          
+        
         .custom-footer {
             background-color:#E9E9E9;
             border-bottom: 20px solid #0C6B2E;

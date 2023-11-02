@@ -9,7 +9,7 @@
     <title>iCare</title>
 </head>
 <body>
-<header>
+    <header>
 
 
         <section class="conteudo-header">
@@ -26,22 +26,37 @@
                 </div>
                 <button class="btn-login">Acessar Sistema</button>
               </section>
-              <section class="header-404" style="background-image: url('/img/404.png'); background-size:cover;  width: 1440px;  height: 801px;">
-                <div class="textos-header">
-              <img src="/img/404-1.svg" alt="ERRO 404" id=" 404-img">
-              <h1>Oops! Página não encontrada!</h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
-                  text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                
-                <div class="links-headers">
-                <a href="index.html" class="btn-header"> Volte ao Inicio <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-          </svg>
-                </a></div>
+        
+</header>
+
+<section class="foto-login" style="background-image: url('/img/loginback.png'); background-size:cover;  width: 720px;  height: 801px;">
+
+    <div class="login-form">
+        <h2>Login</h2>
+        <form action="#">
+            <input type="text" id="email" name="email" placeholder="Enter your e-mail"><br>
             
-          
-            </section>
-</header><footer class="custom-footer text-white pt-5 pb-5">
+            <input type="password" id="pwd" name="pwd" placeholder="**********">
+            <br><br>
+        <input type="submit" value="Entrar">
+        </form> 
+        </div>
+
+</section>
+
+</section>
+      <script>
+      function login() {
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("senha").value;
+      
+      }
+      </script>
+
+
+
+
+<footer class="custom-footer text-white pt-5 pb-5">
     <div class="rodape">
         <div class="row">
             <div class="col-md-4">
