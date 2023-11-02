@@ -12,6 +12,8 @@
         }
         body{
             align-items: center;
+            background-color: #E9E9E9;
+
             
         }
         header {
@@ -153,7 +155,6 @@
 
 
         }
-        header-
 
 
 
@@ -205,11 +206,21 @@
             flex-wrap: wrap; 
             margin: 0 auto;
             max-width: 1440px;
-            padding-top: 100px;
-
-
-            
+            padding-top: 100px;   
         }
+        ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-right: 50px;
+            text-align: left;
+            font-family:Plus Jakarta Sans; 
+            color: #636B81;
+            
+          }
+      
+          
         .textosobre {
             width: 50%;
             padding-left:5%;
@@ -351,7 +362,7 @@
 
         }
 
-        .bannerconsulta{ 
+        #banner-consulta{ 
             display: flex;
             justify-content: center;
             align-items: center;
@@ -399,6 +410,7 @@
             margin: 0 auto;
             max-width: 1440px;
             padding-top: 100px;
+            padding-bottom: 150px;
         }
         .cardservico-title{
             
@@ -423,12 +435,12 @@
             align-items: center;
             background: url('/img/emergencia.png');
             background-size: cover;
-            padding: 0 5%;
+            padding-bottom: 200;
             max-width: 1440px;
             width: 100%;
             height:463px ;
             margin: 0 auto;
-        
+            
         } 
         
         .btn-bannerEmergencia {
@@ -494,14 +506,14 @@
      
 
 
-        .sec-tecno {
+        #como-funciona {
             display: flex;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap; 
             margin: 0 auto;
             max-width: 1440px;
-            padding-top: 100px;
+            padding-top: 150px;
         }
         
         .textotec {
@@ -546,7 +558,7 @@
             flex-wrap: wrap; 
             margin: 0 auto;
             max-width: 1440px;
-            padding-top: 100px;
+            padding-top: 150px;
             padding-bottom: 100px;
         }
 
