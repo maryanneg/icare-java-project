@@ -186,7 +186,7 @@
 
 
         }
-        .sobre-section {
+        #sobre-section {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -378,7 +378,7 @@
             margin-bottom: 20px;
 
         }
-        .servicos{
+        #servicos{
 
             display: flex;
             justify-content: center;
