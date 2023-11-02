@@ -33,14 +33,14 @@
         }
 
 
-       .header-home{ 
+       .header-home, .header-404 {
         display: flex;
         justify-content: center;
         align-items: center;
         background: url(/img/fundotopo.png);
         background-size: cover;
-        height:auto;
-        width: 100%;
+        height:723px;
+        width: 1440px;
         padding: 0 5%;
         flex-wrap: wrap; 
         margin: 0 auto;
@@ -49,6 +49,12 @@
 
     
     }
+    .header-404 h1{
+
+        font-size: 50px;
+        color: #0C6B2E;
+    }  
+    
         .menu {
             display: flex;
             justify-content: center;
@@ -147,6 +153,9 @@
 
 
         }
+        header-
+
+
 
         .t6{
             color: #0C6B2E;
@@ -168,10 +177,13 @@
             line-height: 24px;
             letter-spacing: 0em;
             text-align: center;
-
-            
-            
         }
+            .btn-header .bi{
+
+                color: #E9E9E9;
+            }
+            
+        
         .link2{
             color:  #0C6B2E;
             margin-left: 30px;
@@ -428,13 +440,13 @@
             text-decoration: none;
             width: 552px;
             height:66px;
-            padding: 21px, 33px, 21px, 33px;
             border: 1px;
-
+         
 
         } 
+
         
-        .text_bannerEMERGENCIA{
+        .conteudo-banner1{
             font-family: Poppins;
             font-size: 16px;
             font-weight: 500;
@@ -449,21 +461,18 @@
             height: 256px;
             border-radius: 8px;
         }
-        .conteudo-emergencia {
-            display: flex;
-            flex-direction: column;
-        }
-        .text_bannerEMERGENCIA h1 {
+
+        .conteudo-banner1 h1 {
             color: #ffffff;
             width: 477px;
-            height:40;
+        
             font-family: Poppins;
             font-size: 38px;
             font-weight: 500;
-            line-height:auto; 
+   
         }
         
-        .text_bannerEMERGENCIA h2 {
+        .conteudo-banner1 h2 {
            color:#ffffff; 
            width:477; 
            height:40px;
@@ -473,17 +482,17 @@
            line-height:40px; 
            text-align:left; 
         }
-    
+        #texto-emergencia h1{
+            padding-right: 140px;
+        }
+
+
+        .vetor-emergencia {
+        display: flex;
+        flex-direction: column;
+        }
      
-        .icon-container img {
-            width: 60px;
-            height: 80px;
 
-        }
-        .icon-container{
-
-            margin-left: 20px;
-        }
 
         .sec-tecno {
             display: flex;
