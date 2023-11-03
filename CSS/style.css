@@ -593,14 +593,15 @@
 
 
         .login-form {
-            width: 300px;
             margin: 0 auto;
             border-radius:30px;
             padding: 20px;
             background-color:#ffffff;
             width: 440px;
             height: 374px;
-            padding-top: 50px;
+            padding-top: 60px;
+            margin-left: 755px;
+            margin-bottom: 100px;
 
           }
           .login-form input[type="text"], .login-form input[type="password"] {
