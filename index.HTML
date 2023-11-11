@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/CSS/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/bebaa3aead.js" crossorigin="anonymous"></script>
     <title>iCare</title>
 </head>
 <body>
@@ -13,26 +14,51 @@
     <!--cabeçalho-->
     <header>
     
-<main>
+
 
 <section class="conteudo-header">
 
-
-    <section class="menu">
+<nav>
+    <div class="menu">
         <div class="logo">
           <h1><span class="logoverde">IC</span>are</h1>
         </div>
-        <div class="op-menu">
+        <ul class="op-menu">
           <a class = 'home-menu' href="index.html">Home</a>
           <a class = 'sobre-menu' href="#sobre-section">Sobre</a>
           <a class = 'servico-menu'href="#servicos">Serviços</a>
-        </div>
+        </ul>
+        
         <a class="btn-login" href="login.html">Acessar Sistema</a>
+       
+       <div class = "responsivo">
+        <div class="mobile-menu" onclick="abrirMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
       
+        <div class="dropdown-content" id="menuDropdown">
+          <a href="index.html">Home</a>
+          <a href="#sobre-section">Sobre</a>
+          <a href="#servicos">Serviços</a>
+          <a href="login.html">Acessar Sistema</a>
+        </div>
       
+        <script>
+          function abrirMenu() {
+            var dropdown = document.getElementById("menuDropdown");
+            dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
       
-      </section>
+            var mobileMenu = document.querySelector('.mobile-menu');
+            var rect = mobileMenu.getBoundingClientRect();
+            
+            dropdown.style.top = (rect.bottom + window.scrollY) + 'px';
+            dropdown.style.left = rect.left + 'px';
+          }
+        </script>
+        </div>
       
+      </div>
+      </nav>
       
       <section class="header-home">
 <div class="textos-header">
@@ -262,8 +288,10 @@
     <div class="vetor-emergencia"> <img src="img/Vector.svg" alt="Icon">
 </div>
    
-<div id= "texto-emergencia">   <h2> Call Us</h2>
-<h1>Para Emergência</h1> </div>
+<div id= "texto-emergencia">   
+  <h2> Call Us</h2>
+<h1>Para Emergência</h1> 
+</div>
 
 
 
@@ -306,7 +334,7 @@
     </div>
   
   <div class="imagem6">
-      <img src="/img/medico3.png" alt="#">
+      <img id = "imagemfunc" src="/img/medico3.png" alt="#">
   </div>
 </section>
  <!-- Fim Por que Escolher-->
@@ -354,7 +382,6 @@
 
 </section>
 
-</main>
 
     <footer class="custom-footer text-white pt-5 pb-5">
       <div class="rodape">
@@ -380,14 +407,11 @@
               <div class="col-md-4">
                   <h4>MÍDIAS SOCIAIS</h4>
                   
-                  <a href="#" class="fa fa-facebook"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-                  </svg></a>
+                  <a href="#" class="fa fa-facebook"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16" color="#0C6B2E"> </svg></a>
                   <a href="#" class="fa fa-twitter"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
-                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/>
                   </svg></a>
                   <a href="#" class="fa fa-youtube"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
-                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+
                   </svg></a>
                   
               </div>
