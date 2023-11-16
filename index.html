@@ -1,151 +1,164 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/bebaa3aead.js" crossorigin="anonymous"></script>
-    <title>iCare</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/CSS/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/bebaa3aead.js" crossorigin="anonymous"></script>
+  <script src="/js/script.js" defer></script>
+  <title>iCare</title>
 </head>
+
 <body>
 
-    <!--cabeçalho-->
-    <header>
-    
+  <!--cabeçalho-->
+  <header>
 
 
-<section class="conteudo-header">
 
-<nav>
-    <div class="menu">
-        <div class="logo">
-          <h1><span class="logoverde">IC</span>are</h1>
+    <section class="conteudo-header">
+
+      <nav>
+        <div class="menu">
+          <div class="logo">
+            <h1><span class="logoverde">IC</span>are</h1>
+          </div>
+          <ul class="op-menu">
+            <a class='home-menu' href="index.html">Home</a>
+            <a class='sobre-menu' href="#sobre-section">Sobre</a>
+            <a class='servico-menu' href="#servicos">Serviços</a>
+          </ul>
+
+          <a class="btn-login" href="login.html">Acessar Sistema</a>
+
+          <div class="responsivo">
+            <div class="mobile-menu" onclick="abrirMenu()">
+              <i class="fas fa-bars"></i>
+            </div>
+
+            <div class="dropdown-content" id="menuDropdown">
+              <a href="index.html">Home</a>
+              <a href="#sobre-section">Sobre</a>
+              <a href="#servicos">Serviços</a>
+              <a href="login.html">Acessar Sistema</a>
+            </div>
+          </div>
+
         </div>
-        <ul class="op-menu">
-          <a class = 'home-menu' href="index.html">Home</a>
-          <a class = 'sobre-menu' href="#sobre-section">Sobre</a>
-          <a class = 'servico-menu'href="#servicos">Serviços</a>
-        </ul>
-        
-        <a class="btn-login" href="login.html">Acessar Sistema</a>
-       
-       <div class = "responsivo">
-        <div class="mobile-menu" onclick="abrirMenu()">
-          <i class="fas fa-bars"></i>
-        </div>
-      
-        <div class="dropdown-content" id="menuDropdown">
-          <a href="index.html">Home</a>
-          <a href="#sobre-section">Sobre</a>
-          <a href="#servicos">Serviços</a>
-          <a href="login.html">Acessar Sistema</a>
-        </div>
-      
-        <script>
-          function abrirMenu() {
-            var dropdown = document.getElementById("menuDropdown");
-            dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
-      
-            var mobileMenu = document.querySelector('.mobile-menu');
-            var rect = mobileMenu.getBoundingClientRect();
-            
-            dropdown.style.top = (rect.bottom + window.scrollY) + 'px';
-            dropdown.style.left = rect.left + 'px';
-          }
-        </script>
-        </div>
-      
-      </div>
       </nav>
-      
-      <section class="header-home">
-<div class="textos-header">
-<h1>A saúde é mais importante na vida diária</h1>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
-  text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 
-<div class="links-headers">
-<a href="#como-funciona" class="btn-header">Saiba Mais <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-</svg>
-</a>
-<a href="#banner-consulta" class="link2">Consulta<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-</svg></a></div></div>
+      <section class="header-home">
+        <div class="textos-header">
+          <h1>A saúde é mais importante na vida diária</h1>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy
+            text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+            specimen book.</p>
+
+          <div class="links-headers">
+            <a href="#como-funciona" class="btn-header">Saiba Mais <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+              </svg>
+            </a>
+            <a href="#banner-consulta" class="link2">Consulta<svg xmlns="http://www.w3.org/2000/svg" width="16"
+                height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+              </svg></a>
+          </div>
+        </div>
       </section>
 
-</section>
-
-
-
-
-
-    </header>
-    <!-- fim do cabeçalho-->
-
-
-
-
-    <!--seção sobre nos-->
-    <section id="sobre-section">
-            
-            <div class="banner-sobre">
-            <img src="img/medico1.png" alt="Image description" class="imagem-sobre">
-            <img src="img/medico2.png" alt="Image description" class="imagem-sobre2">           
-            <div class="textosobre">
-                <h6 class=t6>Sobre nós</h6>
-                <h1>Healing Is The Most 
-                    Important Thing</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Proin euismod, magna eu luctus volutpat, 
-                urna dolor semper ligula, quis aliquet erat velit nec augue.</p>
-                
-
-<ul>
-  <div id="lista2">
-  <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
-    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
-  </svg> Alta qualidade de cuidados</li>
-  <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
-    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
-  </svg> Melhores Tecnologias</li></div>
-
-  <div id="lista1">
-  <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
-    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
-  </svg> Médico especialista confiável</li>
-  <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
-    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
-  </svg> Suporte aberto 24/7</li>
-</ul></div>
-            </div>
-        </div>
     </section>
-<!-- fim da seção sobre nos-->
 
 
 
-<!-- Nossas Especialidades-->
 
-<section="esp">
-<div class="titulosec">
-  <h6 class="t6">Por que nós?</h6></div>
-<div class="especialidades">
-    <h1>Nossas Especialidades</h1>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-</div>
-</section>
 
-<div class="card-especialidades">
+  </header>
+  <!-- fim do cabeçalho-->
 
-    <div class="row row-cols-1 row-cols-md-3 g-4">
+
+
+
+  <!--seção sobre nos-->
+  <section id="sobre-section">
+
+    <div class="banner-sobre">
+      <img src="img/medico1.png" alt="Image description" class="imagem-sobre">
+      <img src="img/medico2.png" alt="Image description" class="imagem-sobre2">
+      <div class="textosobre">
+        <h6 class=t6>Sobre nós</h6>
+        <h1>Healing Is The Most
+          Important Thing</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Proin euismod, magna eu luctus volutpat,
+          urna dolor semper ligula, quis aliquet erat velit nec augue.</p>
+
+
+        <ul>
+          <div id="lista2">
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+              </svg> Alta qualidade de cuidados</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+              </svg> Melhores Tecnologias</li>
+          </div>
+
+          <div id="lista1">
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+              </svg> Médico especialista confiável</li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+              </svg> Suporte aberto 24/7</li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- fim da seção sobre nos-->
+
+
+
+  <!-- Nossas Especialidades-->
+
+  <section="esp">
+    <div class="titulosec">
+      <h6 class="t6">Por que nós?</h6>
+    </div>
+    <div class="especialidades">
+      <h1>Nossas Especialidades</h1>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+        a type specimen book.</p>
+    </div>
+    </section>
+
+    <div class="card-especialidades">
+
+      <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
-       
+
           <div class="card-border-0">
             <div class="card-body">
-            
+
               <img src="/img/Figure1.png" class="card-img-top" alt="...">
               <h5 class="card-title">Cardiologia</h5>
               <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -154,13 +167,13 @@
         </div>
         <div class="col">
           <div class="card-border-0">
-            
+
             <div class="card-body">
               <img src="/img/Figure2.png" class="card-img-top" alt="...">
               <h5 class="card-title">Hematologista</h5>
               <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </div>
-    
+
           </div>
         </div>
         <div class="col">
@@ -192,7 +205,8 @@
             </div>
 
           </div>
-        </div>  <div class="col">
+        </div>
+        <div class="col">
           <div class="card-border-0">
             <div class="card-body">
               <img src="/img/Figure6.png" class="card-img-top" alt="...">
@@ -211,220 +225,237 @@
 
 
     </div>
-<!-- Fim de Nossas Especialidades-->
+    <!-- Fim de Nossas Especialidades-->
 
 
 
-   <!-- Banner Consulta--> 
-<section id="banner-consulta">
-  <div class="text_bannerCONSULTA">
-  <h1>Você precisa verificar a sua saúde diáriamente</h1>
-  <a href="#" class="btn-banner">Marque uma Consulta</a>
+    <!-- Banner Consulta-->
+    <section id="banner-consulta">
+      <div class="text_bannerCONSULTA">
+        <h1>Você precisa verificar a sua saúde diáriamente</h1>
+        <a href="#" class="btn-banner">Marque uma Consulta</a>
 
-  </section>
- <!-- FIM Banner Consulta-->
+    </section>
+    <!-- FIM Banner Consulta-->
 
- <!-- Serviços-->
-<section id="servicos">
+    <!-- Serviços-->
+    <section id="servicos">
 
-  <div class="servicos">
-    <h1>Nossos Serviços</h1>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-</div>
+      <div class="servicos">
+        <h1>Nossos Serviços</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book.</p>
+      </div>
 
 
 
-  <div class="row row-cols-1 row-cols-md-3 g-4">
-    <div class="col">
-   
-      <div class="card-border-0">
-        <div class="card-body">
-        
-          <img src="/img/serv1.png" class="card-img-top" alt="...">
-          <h5 class="cardservico-title">Clínico Geral</h5>
-          <p class="card-text2">Li Europan lingues es membres del sam
-            familiLi Europan lingues es membres del
-            sam familie. Lor separat existentie es un
-            myth.</p>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+
+          <div class="card-border-0">
+            <div class="card-body">
+
+              <img src="/img/serv1.png" class="card-img-top" alt="...">
+              <h5 class="cardservico-title">Clínico Geral</h5>
+              <p class="card-text2">Li Europan lingues es membres del sam
+                familiLi Europan lingues es membres del
+                sam familie. Lor separat existentie es un
+                myth.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-border-0">
+
+            <div class="card-body">
+              <img src="/img/serv2.png" class="card-img-top" alt="...">
+              <h5 class="cardservico-title">Oftalmologista</h5>
+              <p class="card-text2">Li Europan lingues es membres del sam
+                familiLi Europan lingues es membres del
+                sam familie. Lor separat existentie es un
+                myth.</p>
+            </div>
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-border-0">
+            <div class="card-body">
+              <img src="/img/serv3.png" class="card-img-top" alt="...">
+              <h5 class="cardservico-title">Cirurgião Dentista</h5>
+              <p class="card-text2">Li Europan lingues es membres del sam
+                familiLi Europan lingues es membres del
+                sam familie. Lor separat existentie es un
+                myth.</p>
+            </div>
+
+          </div>
+        </div>
+    </section>
+    <!-- Fim dos Serviços-->
+
+
+    <!-- Emergencia-->
+    <section class="banner-emergencia">
+
+
+      <div class="conteudo-banner1">
+        <div class="vetor-emergencia"> <img src="img/Vector.svg" alt="Icon">
+        </div>
+
+        <div id="texto-emergencia">
+          <h2> Call Us</h2>
+          <h1>Para Emergência</h1>
+        </div>
+
+
+
+        <a href="/404.html" class="btn-bannerEmergencia">Ligue Agora</a>
+      </div>
+
+
+
+
+
+    </section>
+    <!-- Fim da Emergencia-->
+
+    <!-- Por que Escolher-->
+    <section id="como-funciona">
+
+      <div class="textotec">
+        <div class="titulosec">
+          <h6 class="t6">Como funciona?</h6>
+        </div>
+        <h1>Estamos Aliados a Tecnologias De Ponta</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu purus quis dui tincidunt pulvinar nec vitae
+          libero. Suspendisse
+          bibendum velit sit amet purus cursus, eu pellentesque leo aliquam. Proin eu purus quis dui tincidunt pulvinar
+          nec vitae libero.
+          Suspendisse bibendum velit sit amet purus cursus, eu pellentesque leo aliquam.</p>
+        <div class="barras">
+          <p>Tratamento</p>
+          <div class="container">
+            <div class="progress-bar" style="width:90%"></div>
+          </div>
+
+          <p>Estrategia</p>
+          <div class="container">
+            <div class="progress-bar" style="width:78%"></div>
+          </div>
+
+          <p>Planos</p>
+          <div class="container">
+            <div class="progress-bar" style="width:62%"></div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col">
-      <div class="card-border-0">
-        
-        <div class="card-body">
-          <img src="/img/serv2.png" class="card-img-top" alt="...">
-          <h5 class="cardservico-title">Oftalmologista</h5>
-          <p class="card-text2">Li Europan lingues es membres del sam
-            familiLi Europan lingues es membres del
-            sam familie. Lor separat existentie es un
-            myth.</p>
-        </div>
 
+      <div class="imagem6">
+        <img id="imagemfunc" src="/img/medico3.png" alt="#">
       </div>
-    </div>
-    <div class="col">
-      <div class="card-border-0">
-        <div class="card-body">
-          <img src="/img/serv3.png" class="card-img-top" alt="...">
-          <h5 class="cardservico-title">Cirurgião Dentista</h5>
-          <p class="card-text2">Li Europan lingues es membres del sam
-            familiLi Europan lingues es membres del
-            sam familie. Lor separat existentie es un
-            myth.</p>
-        </div>
-
+    </section>
+    <!-- Fim Por que Escolher-->
+    <section class="nosso-time">
+      <div class="time">
+        <h1>Nosso Time</h1>
       </div>
-    </div>
-</section>
- <!-- Fim dos Serviços-->
-
-
-  <!-- Emergencia-->
-<section class="banner-emergencia">
-
-  
-  <div class="conteudo-banner1">
-    <div class="vetor-emergencia"> <img src="img/Vector.svg" alt="Icon">
-</div>
-   
-<div id= "texto-emergencia">   
-  <h2> Call Us</h2>
-<h1>Para Emergência</h1> 
-</div>
 
 
 
-  <a href="/404.html" class="btn-bannerEmergencia">Ligue Agora</a>
-</div>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
 
+          <div class="card-border-0">
+            <div class="card-body">
 
-
-
-
-</section>
-  <!-- Fim da Emergencia-->
-
- <!-- Por que Escolher-->
-<section id="como-funciona">
-
-  <div class="textotec">
-    <div class="titulosec">
-      <h6 class="t6">Como funciona?</h6></div>
-      <h1>Estamos Aliados a Tecnologias De Ponta</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu purus quis dui tincidunt pulvinar nec vitae libero. Suspendisse
-         bibendum velit sit amet purus cursus, eu pellentesque leo aliquam. Proin eu purus quis dui tincidunt pulvinar nec vitae libero. 
-         Suspendisse bibendum velit sit amet purus cursus, eu pellentesque leo aliquam.</p>
-      <div class="barras">
-        <p>Tratamento</p>
-        <div class="container">
-          <div class="progress-bar" style="width:90%"></div>
+              <img src="/img/medico4.png" class="card-img-top" alt="...">
+              <h5 class="cardTime-title">Clínico Geral</h5>
+              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+          </div>
         </div>
-        
-        <p>Estrategia</p>
-        <div class="container">
-          <div class="progress-bar" style="width:78%"></div>
-        </div>
-        
-        <p>Planos</p>
-        <div class="container">
-          <div class="progress-bar" style="width:62%"></div>
-        </div>
-        </div>
-    </div>
-  
-  <div class="imagem6">
-      <img id = "imagemfunc" src="/img/medico3.png" alt="#">
-  </div>
-</section>
- <!-- Fim Por que Escolher-->
-<section class ="nosso-time">
-  <div class="time">
-    <h1>Nosso Time</h1>
-</div>
+        <div class="col">
+          <div class="card-border-0">
 
+            <div class="card-body">
+              <img src="/img/medico5.png" class="card-img-top" alt="...">
+              <h5 class="cardTime-title">Oftalmologista</h5>
+              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
 
-
-  <div class="row row-cols-1 row-cols-md-3 g-4">
-    <div class="col">
-   
-      <div class="card-border-0">
-        <div class="card-body">
-        
-          <img src="/img/medico4.png" class="card-img-top" alt="...">
-          <h5 class="cardTime-title">Clínico Geral</h5>
-          <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card-border-0">
-        
-        <div class="card-body">
-          <img src="/img/medico5.png" class="card-img-top" alt="...">
-          <h5 class="cardTime-title">Oftalmologista</h5>
-          <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <div class="col">
+          <div class="card-border-0">
+            <div class="card-body">
+              <img src="/img/medico6.png" class="card-img-top" alt="...">
+              <h5 class="cardTime-title">Cirurgião Dentista</h5>
+              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+
+          </div>
         </div>
 
-      </div>
-    </div>
-    <div class="col">
-      <div class="card-border-0">
-        <div class="card-body">
-          <img src="/img/medico6.png" class="card-img-top" alt="...">
-          <h5 class="cardTime-title">Cirurgião Dentista</h5>
-          <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-        </div>
 
-      </div>
-    </div>
-
-
-</section>
+    </section>
 
 
     <footer class="custom-footer text-white pt-5 pb-5">
       <div class="rodape">
-          <div class="row">
-              <div class="col-md-4">
-                  <h1>ICare</h1>
-                  <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard.</p>
-                  <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
-                    <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
-                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
-                  </svg>  Horário Comercial: 08:00 - 17:00</p>
-                  <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
-                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-                  </svg> +55 99999-999</p>
-                  <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
-                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
-                  </svg> suport@icare.com</p>
-              </div>
-              <div class="col-md-4">
-                  <h4>ENDEREÇO</h4>
-                  <p>Av. King Hélio da Carvalho, 1617b - Madalena, Recife - PE, 50720-225</p>
-              </div>
-              <div class="col-md-4">
-                  <h4>MÍDIAS SOCIAIS</h4>
-                  
-                  <a href="#" class="fa fa-facebook"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16" color="#0C6B2E"> </svg></a>
-                  <a href="#" class="fa fa-twitter"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
-                  </svg></a>
-                  <a href="#" class="fa fa-youtube"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
-
-                  </svg></a>
-                  
-              </div>
+        <div class="row">
+          <div class="col-md-4">
+            <h1>ICare</h1>
+            <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the
+              industry's standard.</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock"
+                viewBox="0 0 16 16">
+                <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+              </svg> Horário Comercial: 08:00 - 17:00</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-telephone" viewBox="0 0 16 16">
+                <path
+                  d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+              </svg> +55 99999-999</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope"
+                viewBox="0 0 16 16">
+                <path
+                  d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+              </svg> suport@icare.com</p>
           </div>
+          <div class="col-md-4">
+            <h4>ENDEREÇO</h4>
+            <p>Av. King Hélio da Carvalho, 1617b - Madalena, Recife - PE, 50720-225</p>
+          </div>
+          <div class="col-md-4">
+            <h4>MÍDIAS SOCIAIS</h4>
 
-        
+            <a href="#" class="fa fa-facebook"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16" color="#0C6B2E"> </svg></a>
+            <a href="#" class="fa fa-twitter"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+              </svg></a>
+            <a href="#" class="fa fa-youtube"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+
+              </svg></a>
+
+          </div>
+        </div>
+
+
       </div>
-      
-        <p>©2023 Copyrighted</p>
 
-  </footer>
-  
+      <p>©2023 Copyrighted</p>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
 </body>
+
 </html>
