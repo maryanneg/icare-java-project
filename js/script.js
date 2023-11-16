@@ -23,6 +23,23 @@ function cadastrar () {
     .catch(function (res) { console.log(res); })
 };
 
+function logar () {
+    fetch("http://localhost:8080/usuarios/login",
+    {
+        headers: {
+            'Accept': 'aplication/json',
+            'Content-Type': 'aplication/json'
+        },
+        method: 'POST',
+        body: JSON.stringify({
+            email: email.value,
+            senha: senha.value
+        })
+    })
+    .then(function (res) {console.log(res); })
+    .catch(function (res) {console.log(res); })
+}
+
 function limpar() {
     nome.value = "";
     email.value = "";

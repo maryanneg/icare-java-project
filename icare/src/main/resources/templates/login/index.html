@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/src/main/resources/static/css/style.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/bebaa3aead.js" crossorigin="anonymous"></script>
+    <title>iCare</title>
+</head>
+<body>
+    <header>
+
+
+        <section class="conteudo-header">
+        
+        
+            <section class="menu">
+                <div class="logo">
+                  <h1><span class="logoverde">IC</span>are</h1>
+                </div>
+                <div class="op-menu">
+                  <a class = 'home-menu' href="index.html">Home</a>
+                  <a class = 'sobre-menu' href="index.html#sobre-section">Sobre</a>
+                  <a class = 'servico-menu'href="index.html#servicos">Serviços</a>
+                </div>
+                 
+        <a class="btn-login" href="login.html">Acessar Sistema</a>
+                <div class = "responsivo">
+                  <div class="mobile-menu" onclick="abrirMenu()">
+                    <i class="fas fa-bars"></i>
+                  </div>
+                
+                  <div class="dropdown-content" id="menuDropdown">
+                    <a href="index.html">Home</a>
+                    <a href="#sobre-section">Sobre</a>
+                    <a href="#servicos">Serviços</a>
+                    <a href="login.html">Acessar Sistema</a>
+                  </div>
+                
+                  <script>
+                    function abrirMenu() {
+                      var dropdown = document.getElementById("menuDropdown");
+                      dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+                
+                      var mobileMenu = document.querySelector('.mobile-menu');
+                      var rect = mobileMenu.getBoundingClientRect();
+                      
+                      dropdown.style.top = (rect.bottom + window.scrollY) + 'px';
+                      dropdown.style.left = rect.left + 'px';
+                    }
+                  </script>
+                  </div>
+
+              </section>
+        
+</header>
+
+<section class="foto-login">
+
+    <div class="login-form">
+        <h2>Login</h2>
+        <form class="user" action="/logar" method="POST">
+            <input type="text" id="email" name="email" placeholder="Enter your e-mail"><br>
+            
+            <input type="password" id="senha" name="senha" placeholder="**********">
+            <br><br>
+        <input type="submit" value="Entrar">
+        </form> 
+        </div>
+</section>
+
+</section>
+      <script>
+      function login() {
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("senha").value;
+      
+      }
+      </script>
+
+
+
+
+<footer class="custom-footer text-white pt-5 pb-5">
+  <div class="rodape">
+      <div class="row">
+          <div class="col-md-4">
+              <h1>ICare</h1>
+              <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard.</p>
+              <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+              </svg>  Horário Comercial: 08:00 - 17:00</p>
+              <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+              </svg> +55 99999-999</p>
+              <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+              </svg> suport@icare.com</p>
+          </div>
+          <div class="col-md-4">
+              <h4>ENDEREÇO</h4>
+              <p>Av. King Hélio da Carvalho, 1617b - Madalena, Recife - PE, 50720-225</p>
+          </div>
+          <div class="col-md-4">
+              <h4>MÍDIAS SOCIAIS</h4>
+              
+              <a href="#" class="fa fa-facebook"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16" color="#0C6B2E"> </svg></a>
+              <a href="#" class="fa fa-twitter"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+              </svg></a>
+              <a href="#" class="fa fa-youtube"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+
+              </svg></a>
+              
+          </div>
+      </div>
+
+    
+  </div>
+  
+    <p>©2023 Copyrighted</p>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>   
+</body>
+</html>
